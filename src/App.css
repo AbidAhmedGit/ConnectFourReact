@@ -1,52 +1,24 @@
-#root {
-  background-color: lightgrey;
-  text-align: center;
+input:not([type="button"], [type="submit"]) {
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #828080;
+  font-size: 18px;
+  outline: none;
 }
 
-h1 {
-  margin-bottom: 0;
-}
-
-button,
-input[type="button"] {
-  display: block;
-  margin: 0 10px 10px auto;
+button, input[type="button"], input[type="submit"] {
+  margin-left: 10px;
   cursor: pointer;
   padding: 12px;
   font-size: 16px;
   border-radius: 8px;
   background-color: #02203c;
   color: white;
+  transition: 0.5s;
 }
 
-.board {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
-
-.tile {
-  flex-basis: 40%;
-  border: 1px solid black;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
+button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
+  background-color: grey;
+  color: black;
 }
